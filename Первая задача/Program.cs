@@ -8,14 +8,14 @@ int[] arr = new int[n];
 int Summ(int n)
 
 {
-int sum = 0;
+int a = 0;
 for (int i = 0; i < n; i++)
 {
 System.Console.WriteLine($"Введите {i + 1} число: ");
 arr[i] = Convert.ToInt32(Console.ReadLine());
-if (arr[i] > 0) sum ++;
+if (arr[i] > 0) a ++;
 }
-return sum;
+return a;
 }
 
 System.Console.WriteLine($"Количество чисел которых больше нуля = {Summ(n)}");
